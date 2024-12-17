@@ -1,0 +1,121 @@
+/* Style général pour le corps de la page */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #1a1a1a; /* Fond noir */
+   color: #dcdcdc; /* Texte gris clair */
+}
+/* En-tête et menu de navigation */
+header {
+   background-color: #3b0f69; /* Violet foncé */
+   padding: 10px 0;
+   text-align: center;
+}
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+nav ul li {
+   display: inline;
+   margin: 0 15px;
+}
+nav ul li a {
+   color: #dcdcdc; /* Couleur des liens */
+   text-decoration: none;
+   font-weight: bold;
+   transition: color 0.3s;
+   font-size: 1.1em;
+}
+nav ul li a:hover {
+   color: #b286f4; /* Violet clair */
+}
+/* Contenu principal */
+main {
+   padding: 20px;
+   text-align: center;
+}
+h1, h2 {
+   color: #b286f4; /* Violet clair */
+}
+p {
+   text-align: justify;
+   line-height: 1.6;
+   margin-bottom: 15px;
+   font-size: 1em;
+}
+/* Sections */
+section {
+   margin: 20px auto;
+   background-color: #262626; /* Fond gris foncé */
+   border-radius: 10px;
+   padding: 20px;
+   max-width: 800px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+section h2 {
+   margin-bottom: 10px;
+   font-size: 1.5em;
+}
+/* Boutons arrondis */
+button, a.button {
+   display: inline-block;
+   padding: 10px 20px;
+   margin-top: 10px;
+   background-color: #6a0dad; /* Violet moyen */
+   color: #ffffff; /* Texte blanc */
+   border: none;
+   border-radius: 20px; /* Boutons arrondis */
+   font-size: 1em;
+   font-weight: bold;
+   text-decoration: none;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.2s;
+}
+button:hover, a.button:hover {
+   background-color: #b286f4; /* Violet clair */
+   transform: scale(1.05);
+}
+/* Images */
+img {
+   max-width: 100%;
+   border-radius: 10px;
+   margin: 10px 0;
+}
+/* Pied de page */
+footer {
+   background-color: #3b0f69; /* Violet foncé */
+   color: #dcdcdc;
+   text-align: center;
+   padding: 10px 0;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   font-size: 0.9em;
+}
+footer p {
+   margin: 0;
+}
+/* Liens dans le contenu */
+a {
+   color: #b286f4;
+   text-decoration: none;
+   font-weight: bold;
+}
+a:hover {
+   text-decoration: underline;
+}
+/* Adaptation aux petits écrans */
+@media (max-width: 768px) {
+   nav ul li {
+       display: block;
+       margin: 10px 0;
+   }
+   section {
+       padding: 15px;
+   }
+   button, a.button {
+       width: 100%;
+   }
+}
